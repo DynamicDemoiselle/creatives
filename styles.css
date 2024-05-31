@@ -78,3 +78,31 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.service {
+    margin-bottom: 30px;
+}
+
+.service h3 {
+    color: #F74C29;
+    margin-bottom: 10px;
+}
+
+.service p, .service ul {
+    color: #3B2EA1;
+    margin: 10px 0;
+    text-align: left;
+}
+
+.service ul {
+    padding-left: 20px;
+}
+
+.service ul li {
+    margin-bottom: 5px;
+}
+
+.service h4 {
+    color: #4ECAFE;
+    margin-top: 20px;
+}

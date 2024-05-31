@@ -79,30 +79,55 @@ footer {
     padding: 20px 0;
 }
 
-.service {
-    margin-bottom: 30px;
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
-.service h3 {
+.service-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-sizing: border-box;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+.service-card h3, .service-card h4 {
     color: #F74C29;
     margin-bottom: 10px;
 }
 
-.service p, .service ul {
+.service-card p, .service-card ul {
     color: #3B2EA1;
     margin: 10px 0;
     text-align: left;
 }
 
-.service ul {
+.service-card ul {
     padding-left: 20px;
 }
 
-.service ul li {
+.service-card ul li {
     margin-bottom: 5px;
 }
 
-.service h4 {
-    color: #4ECAFE;
-    margin-top: 20px;
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: calc(100% - 40px);
+    }
 }

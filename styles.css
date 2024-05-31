@@ -43,3 +43,36 @@ footer {
     text-align: center;
     padding: 20px 0;
 }
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.headshot {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    color: #3B2EA1;
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        text-align: left;
+    }
+    .headshot {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+}

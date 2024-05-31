@@ -50,11 +50,13 @@ footer {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    padding: 20px;
 }
 
 .headshot {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    max-width: 300px; /* Adjust this value as needed */
+    height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
 }
@@ -64,6 +66,7 @@ footer {
     margin: 0 auto;
     font-size: 1.2em;
     color: #3B2EA1;
+    padding: 20px;
 }
 
 @media (min-width: 768px) {
